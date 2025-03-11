@@ -14,7 +14,7 @@
   /* max-width: 100vw; */
 }
 
-.line-under {
+/* .line-under {
   position: relative;
 }
 
@@ -25,6 +25,23 @@
   background-color: #ffcc00;
   position: absolute;
   bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+} */
+
+.line-under {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.line-under::after {
+  content: "";
+  width: 50%;
+  height: 6px;
+  background-color: #ffcc00;
+  position: absolute;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   border-radius: 10px;
