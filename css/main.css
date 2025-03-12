@@ -491,6 +491,11 @@ article:hover::after {
 
 /* ----------------   footer --------------- */
 
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
 .footer-content {
   background-color: #f3f3f3;
   display: flex;
@@ -635,6 +640,12 @@ article:hover::after {
     height: auto;
   }
 
+  .footer {
+    position: relative;
+    bottom: -93rem;
+    width: 100%;
+  }
+
   .footer-content {
     flex-direction: column;
     align-items: center;
@@ -668,7 +679,7 @@ article:hover::after {
     grid-template-columns: 1fr;
   }
 
-  .footer {
+  /* .footer {
     margin-bottom: 20rem;
-  }
+  } */
 }

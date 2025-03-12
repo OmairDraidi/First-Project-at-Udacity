@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/contact.css" />
     <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
     <title>Business Landing Website Project</title>
   </head>
   <body>
@@ -34,9 +34,10 @@
         <div class="section__title line-under">
           <h1 class="line-under-line">Contact</h1>
         </div>
-        <div class="section-contact-img">
-          <img src="../img/Contact/contact.jpg" alt="about-img" />
-        </div>
+        <figure class="section-contact-img">
+          <img src="../img/Contact/contact.jpg" alt="contact-img" />
+          <figcaption>contact-img</figcaption>
+        </figure>
 
         <p class="section-contact-desc">
           Leverage agile frameworks to provide a robust Hugo Sousa synopsis for
@@ -47,15 +48,26 @@
         </p>
 
         <form class="form" action="#">
-          <input class="form-input" type="text" placeholder="Name.." required />
+          <label for="name"></label>
           <input
             class="form-input"
+            id="name"
+            type="text"
+            placeholder="Name.."
+            required
+          />
+          <label for="email"></label>
+          <input
+            class="form-input"
+            id="email"
             type="email"
             placeholder="Email.."
             required
           />
+          <label for="message"></label>
           <textarea
             class="form-input"
+            id="message"
             name="textarea"
             placeholder="Message.."
             rows="10"
